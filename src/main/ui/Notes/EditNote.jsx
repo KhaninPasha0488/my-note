@@ -17,7 +17,6 @@ export const EditNote = ({id, description, cancel, edit, tagList, addTag}) => {
             })
             noRepeatArray = Array.from(new Set([...noRepeatArray, ...tempTags]))
             addTag(id, noRepeatArray)
-            console.log(noRepeatArray)
             edit(id, text, noRepeatArray)
         } else {
             edit(id, text)

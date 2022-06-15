@@ -1,4 +1,4 @@
-import {useEffect, useMemo, useState} from "react";
+import {useMemo, useState} from "react";
 import {findTags} from "../../../utils/findTags";
 import s from "./Notes.module.scss"
 import {Note} from "./Note";

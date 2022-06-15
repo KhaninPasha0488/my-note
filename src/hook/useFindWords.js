@@ -1,7 +1,6 @@
 import {useMemo} from "react";
 
 export const useFindWords = (words, text) => {
-    console.log(words,"33",text)
     const template = useMemo(() => {
         let regex = '/|'
         words.forEach(({body}) => {
