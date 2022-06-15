@@ -1,0 +1,10 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "description": "I wanna go to #shop",
+      "tags": [{"id": 1, "body": "#I"}, {"id": 2, "body": "#go"}, {"id": 3, "body": "#shop"}]
+    }
+
+  ]
+}

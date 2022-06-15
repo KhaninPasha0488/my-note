@@ -1,0 +1,60 @@
+@import "../App/App";
+.noteOuterWrapper {
+  width: 80%;
+  border: #eaba6b 2px solid;
+  padding: 15px ;
+  border-radius: 5px;
+  background-color: #e5f8f6;
+  margin: 30px auto;
+  .noteInnerWrapper {
+    display: flex;
+    margin: 10px 0;
+    border: 2px solid $borderColor;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    .note {
+      flex: 0 1 80%;
+    }
+    @media (max-width: 728px) {
+      flex-wrap: wrap;
+      .note{
+        flex: 0 1 auto;
+        margin-bottom: 20px;
+      }
+    }
+
+
+    .noteBody {
+      font-size: 1.5em;
+
+    }
+
+
+
+    .noteDescription {
+      word-wrap: anywhere;
+      line-height: 25px;
+
+    }
+
+    .noteButtons {
+      flex: 0 0 20%;
+      @media (max-width: 728px){
+        margin-left: auto;
+      }
+    }
+
+    .btnDefault {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 10px;
+
+      button + button {
+        margin-left: 15px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,70 @@
+.notes {
+  @media (max-width: 1020px) {
+    max-width: 730px;
+    margin: 0 auto;
+  }
+  @media (max-width: 728px) {
+    max-width: 500px;
+    padding: 10px 5px;
+  }
+
+  .filter {
+    input {
+      width: 80%;
+      @media (max-width: 728px) {
+        width: 65%;
+      }
+    }
+  }
+
+  .newNoteAndTag {
+    border: #e3bb7b 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #daf0f8;
+
+    .newNote {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+      @media (max-width: 1020px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      textarea {
+        flex: 0 1 80%;
+        @media (max-width: 1020px) {
+          width: 97%;
+
+          margin-bottom: 10px;
+
+        }
+        @media (max-width: 480px) {
+          width: 95%;
+        }
+      }
+
+      button {
+        flex: 0 1 15%;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+
+        @media (max-width: 1020px) {
+          flex: 0 1 15%;
+        }
+        @media (max-width: 728px) {
+          font-size: 1.2em;
+          flex: 0 1 29%;
+        }
+        @media (max-width: 480px) {
+
+        }
+      }
+    }
+  }
+}
